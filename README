@@ -1,0 +1,13 @@
+This is a template installer for NSIS.
+
+The test.nsi file needs to be compiled with NSIS to get the WelcomeFinish.exe file, but as is, the exe can be run to achieve the following things:
+
+1. It will drop a test.txt on the desktop displaying info like a unique guid, and timestamp information
+
+2. It will drop a folder in programfiles(x86)/ModernUItest that contains a test_folder which contains an empty test.txt file and an uninstall.exe file
+
+3. It will create a start menu icon
+
+4. It will edit the HKCU registry to add the installation directory into the windows regsitry.
+
+5. When done, call uninstall.exe and it will delete all the above files, giving you a clean slate.
